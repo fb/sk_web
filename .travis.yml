@@ -5,6 +5,8 @@ rvm:
   - 1.9.3
   - 1.8.7
 before_script:
+  - cp config/database.yml.dist config/database.yml
+  - cp config/sk_web.yml.dist config/sk_web.yml
   - mysql -e 'create database startkladde_test;'
   - mysql startkladde_test < db/schema.sql
 before_install:
