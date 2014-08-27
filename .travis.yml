@@ -6,3 +6,6 @@ rvm:
   - 1.8.7
 before_script:
   - mysql -e 'create database startkladde_test;'
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y libfcgi-dev
