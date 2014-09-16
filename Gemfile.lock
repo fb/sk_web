@@ -41,7 +41,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.10.1)
-    mysql2 (0.2.23)
+    mysql2 (0.3.16)
     polyglot (0.3.5)
     prawn (0.8.4)
       prawn-core (>= 0.8.4, < 0.9)
@@ -92,6 +92,6 @@ PLATFORMS
 
 DEPENDENCIES
   fcgi
-  mysql2 (~> 0.2.0)
+  mysql2
   prawn (~> 0.8.4)
   rails (= 3.2.19)

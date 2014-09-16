@@ -6,7 +6,7 @@ gem 'rails', '3.2.19'
 
 gem 'prawn', '~> 0.8.4'
 
-gem 'mysql2', '~> 0.2.0'
+gem 'mysql2'
 group :production do
   gem 'fcgi'
 end
