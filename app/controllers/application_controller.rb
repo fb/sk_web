@@ -1,13 +1,5 @@
 # encoding: utf-8
 
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
-
-# Hack
-# Don't output anything, it adds extra output to script/runner invocations
-#puts "Loading extensions"
-Dir[File.join(Rails.root, "lib", "extensions", "*.rb")].each {|l| require_dependency l }
-
 class ApplicationController < ActionController::Base
 	include Rendering
 	include DateHandling
