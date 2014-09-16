@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class ApplicationController < ActionController::Base
-	include Rendering
+	#include Rendering
 	include DateHandling
 	include ERB::Util
 
@@ -19,9 +19,6 @@ class ApplicationController < ActionController::Base
 
 	helper :all # include all helpers, all the time
 	protect_from_forgery # See ActionController::RequestForgeryProtection for details
-
-	# Note that multiple filter_parameter_logging will override earlier ones.
-	filter_parameter_logging :password
 
 	before_filter :set_relative_url_root
 	before_filter :check_permissions
