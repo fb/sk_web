@@ -1,6 +1,6 @@
 <% page_title "Benutzer #{h @user.username} editieren" do %>
 
-	<% form_for(@user) do |f| %>
+	<%= form_for(@user) do |f| %>
 		<% person=@user.person %>
 		<%= f.error_messages %>
 
