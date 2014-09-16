@@ -222,7 +222,7 @@ private
 	def require_ssl
 		return if request.ssl?
 		return if local_request? # Don't require SSL from localhost
-		return if RAILS_ENV=='development' # Don't require SSL in development mode
+		return if Rails.env=='development' # Don't require SSL in development mode
 
 		# Old: loses the format (try loading http://.../today.pdf) in production mode
 		#redirect_to :protocol => "https://"
