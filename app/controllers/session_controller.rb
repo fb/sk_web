@@ -3,7 +3,7 @@
 class SessionController < ApplicationController
 	allow_public :login, :logout, :settings
 
-	filter_parameter_logging :current_password, :password, :password_confirmation
+	config.filter_parameters += [:current_password, :password, :password_confirmation]
 
 	def login
 		if !request.post?
